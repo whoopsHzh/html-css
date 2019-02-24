@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>云道</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .clearfix:after {  content: ""; display: block; height: 0; clear: both; visibility: hidden;  }   
+
+        .clearfix {*zoom: 1;}   /* IE6、7 专有 */
+
+        /* body{
+            height: 3000px;
+        } */
+        li{
+            list-style: none;
+            float: left;
+        }
+        .headerBd{
+            width: 1180px;
+            text-align: center;
+            line-height: 100px;
+            margin: 0 auto;
+        }
+        .logo{
+            width: 223px;
+            height: 100px;
+            background: url(./logo.png) no-repeat left;
+            float: left;
+        }
+        .header ul{
+            float: right;
+        }
+        .header li{
+            width: 75px;
+
+        }
+        .banner{
+            background: url(./banner.jpg) no-repeat top center;
+            height: 620px;
+        }
+        .service{
+            width: 1088px;
+        }
+        .service-bd{
+             /* overflow: hidden; */
+            width: 1088px;
+            height: 552px;
+            margin: 0 auto 103px;
+        }
+        .fixclear{
+            clear: both;
+        }
+        .service,.case,.footer{
+            width: 1550px;
+            margin: 62px auto 0;
+        }
+        .service-hd,.case-hd,.footer-hd{
+            border-top:1px solid #aaa;
+            margin: 0 100px 46px;
+            text-align: center;
+        }
+        h3{
+            margin-top: -17px
+        }
+        p{
+            margin-top: 18px;
+            font-size: 12px;
+            color: #666;
+        }
+        /* .service ul{
+            width: 1066px;
+            height: 552px;
+            margin: 0 auto 103px;
+        } */
+        .service li{
+            width: 248px;
+            height: 436px;
+            border: 1px solid #e7e8e9;
+            float: left;
+            text-align: center;
+            padding: 40px 36px 56px;
+        }
+        .service li img{
+           width: 248px;
+           height: 132px;
+        }
+        .ser-hd-middle{
+            margin: 0 50px;
+        }
+        
+        .service-bd h4{
+            margin: 43px auto 26px;
+        }
+        .service-bd p{
+            text-align: center; 
+            line-height: 28px;
+            margin-bottom: 38px; 
+        }
+        .service-bd span{
+            display: inline-block;
+            font-size: 12px;
+            text-align: center;
+            line-height: 40px;
+            color: #f40;
+            border: 1px solid #f40;
+            width: 150px;
+            height: 40px;
+            border-radius: 6px;
+        }
+        .service-bd a:hover span{
+            color: #fff;
+            background: #f40;
+        }
+        .case{
+            width: 1066px;
+        }
+        /* .case-bd,.footer-bd{
+            width: 1066px;
+            margin: 0 auto;
+        } */
+        
+        .case-bd{
+            width: 1066px;
+            margin-top: 80px auto 0;
+            position: relative;
+        }
+        .case-bd li{
+            width: 324px;
+            height: 212px;
+            position: relative;
+        }
+        .case-bd li .text{
+            width: 100%;
+            text-align: center;
+            background: rgba(0,0,0,.3);
+            height: 45px;
+            line-height: 45px;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+        }
+        .mark{
+            position: absolute;
+            visibility: hidden;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,.4) url(./fdj.png) no-repeat center;
+            top: 0;
+            left: 0;
+        }
+        .case-bd li:hover .mark{
+            visibility:visible;
+        }
+        .case-bd .middle{
+            margin: 0 40px;
+        }
+    
+        .left,.right{
+            display: inline-block;
+            text-align: center;
+            line-height: 62px;
+            text-decoration: none;
+            width: 62px;
+            height: 62px;
+            background: rgba(0,0,0,.4);
+            color: #FFF;
+            border-radius: 50%;
+            position: absolute;
+            top:50%;
+            margin-top: -31px;
+        }
+        .left{
+            left: -90px;
+        }
+        .right{
+            right: -90px;
+        }
+        .case-bd a:hover{
+            background: rgba(0,0,0,.7);
+        }
+        .footer{
+            width: 1066px;
+        }
+        .footer-bd{
+            height: 244px;
+            width: 1050px;
+            overflow: hidden;
+        }
+        .footer-bd ul{
+            height: 248px;
+            width: 1066px;
+        }
+        .footer li{
+            text-align: center;
+            width: 212px;
+            height: 62px;
+            border-right: 1px dashed #ccc;
+            border-bottom: 1px dashed #ccc;
+            padding-top: 20px
+        }
+        .F{
+            height: 164px;
+            background-color: #212425;
+            margin-top: 100px;
+            overflow: hidden;
+        }
+        .subnav{
+            text-align: center;
+            margin-top: 50px;
+            color: #FFF;
+        }
+        .subnav a{
+            color: #FFF;
+            text-decoration: none;
+            padding: 0 5px;
+        }
+        .subnav a:hover {
+	    color: #2288f6;
+        text-decoration: underline;
+        }
+        .F p{
+            text-align: center;
+            color: #aaa;
+            margin: 30px;
+        }
+    </style>
+</head>
+    <body>
+        <div class="header">
+            <div class="headerBd">
+                <div class="logo"></div>
+                <nav>
+                    <ul>
+                        <li>Yoo~Is</li>
+                        <li>Yoo~Is</li>
+                        <li>Yoo~Is</li>
+                        <li>Yoo~Is</li>
+                        <li>Yoo~Is</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- banner 清除上面浮动 -->
+        <div class="fixclear"></div>
+        <!-- banner -->
+        <div class="banner"></div>
+        <!-- service -->
+        <div class="service">
+            <div class="service-hd">
+                <h3>
+                    <img src="./ser.png" alt="">
+                </h3>
+                <p>shopcmd云道，国内领先的独立电商解决方案及全渠道营销平台。完整的产品体系，简约的系统，个性化前端，全覆盖多渠道营销体系... 我们致力于打造一个
+                <br>服务于品牌商城/独立电商的完整生态，让企业的独立电商之路变得更简单，也更有价值！</p>
+            </div>
+            <div class="service-bd">
+                <ul>
+                    <li>
+                        <div class="ser-hd"><img src="./icon1.png" alt=""></div>
+                        <div class="ser-bd">
+                            <h4>我哦是Yoo~~</h4>
+                            <p>shopcmd云电商解决方案，我们不仅仅是领先的独立商城建站系统。我们 从互联网时代品牌建设和品牌营销的全 新视角，赋予了品牌商城及独立电商更 大的生存空间和存在价值！</p>
+                            <a href="#"><span>我要建站</span></a>
+                        </div>
+                    </li>
+                    <li class="ser-hd-middle">
+                        <div class="ser-hd"><img src="./icon1.png" alt=""></div>
+                        <div class="ser-bd">
+                            <h4>我哦是Yoo~~</h4>
+                            <p>shopcmd云电商解决方案，我们不仅仅是领先的独立商城建站系统。我们 从互联网时代品牌建设和品牌营销的全 新视角，赋予了品牌商城及独立电商更 大的生存空间和存在价值！</p>
+                            <a href="#"><span>我要建站</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ser-hd"><img src="./icon1.png" alt=""></div>
+                        <div class="ser-bd">
+                            <h4>我哦是Yoo~~</h4>
+                            <p>shopcmd云电商解决方案，我们不仅仅是领先的独立商城建站系统。我们 从互联网时代品牌建设和品牌营销的全 新视角，赋予了品牌商城及独立电商更 大的生存空间和存在价值！</p>
+                            <a href="#"><span>我要建站</span></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="fixclear"></div>
+            <!-- 清除上面浮动 -->
+        </div>
+        <!-- Case -->
+        <div class="case">
+            <div class="case-hd">
+                <h3>
+                    <img src="./ser.png" alt="">
+                </h3>
+            </div>
+            <div class="case-bd fixclear">
+                <ul>
+                    <li>
+                        <img src="./pro1.png" alt="">
+                        <div class="text">你说尼马洋，我说切克草</div>
+                        <div class="mark"></div>
+                    </li>
+                    <li class="middle">
+                        <img src="./pro.png" alt="">
+                        <div class="text">你说尼马洋，我说切克草</div>
+                        <div class="mark"></div>
+                    </li>
+                    <li>
+                        <img src="./pro1.png" alt="">
+                        <div class="text">你说尼马洋，我说切克草</div>
+                        <div class="mark"></div>
+                    </li>
+                </ul>
+                <!-- 要记得清除上面浮动 -->
+                <div class="fixclear"></div>
+                <a class="left" href="#">&lt</a>
+                <a class="right" href="#">&gt</a>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer-hd">
+                <h3>
+                    <img src="./ser.png" alt="">
+                </h3>
+            </div>
+            <div class="footer-bd clearfix">
+                <ul>
+                    <li><img src="./tb.png" alt=""></li>
+                    <li><img src="./tb.png" alt=""></li>
+                    <li><img src="./tb.png" alt=""></li>
+                    <li><img src="./tb.png" alt=""></li>
+                    <li><img src="./tb.png" alt=""></li>
+                    <li><img src="./tb.png" alt=""></li>
+                    <li><img src="./tb.png" alt=""></li>
+                    <li><img src="./tb.png" alt=""></li>
+                    <li><img src="./tb.png" alt=""></li>
+                    <li><img src="./tb.png" alt=""></li>
+                    <li><img src="./tb.png" alt=""></li>
+                    <li><img src="./tb.png" alt=""></li>
+                    <li><img src="./tb.png" alt=""></li>
+                    <li><img src="./tb.png" alt=""></li>
+                    <li><img src="./tb.png" alt=""></li>
+                    <li><img src="./tb.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="F">
+            <div class="subnav">
+                <a href="#">Shopcmd</a>|
+                <a href="#">首页</a>|
+                <a href="#">官网商城</a>|
+                <a href="#">鸡蛋票</a>|
+                <a href="#">中华大烟冲</a>|
+                <a href="#">问你怕不怕</a>|
+                <a href="#">我吃</a>|
+                <a href="#">再吃</a>|
+                <a href="#">吃完</a>
+            </div>
+            <p>
+                    ©Copyright 2015 苏州海云网络科技有限公司版权所有 | 苏ICP备15038170号-3
+            </p>
+        </div>
+    </body>
+</html>

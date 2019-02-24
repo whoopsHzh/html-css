@@ -1,0 +1,416 @@
+/* 版心 */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?9gxa9g');
+    src:  url('../fonts/icomoon.eot?9gxa9g#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?9gxa9g') format('truetype'),
+      url('../fonts/icomoon.woff?9gxa9g') format('woff'),
+      url('../fonts/icomoon.svg?9gxa9g#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  *{
+      margin: 0;
+      padding: 0;
+  }
+  body{
+      background: #f6f6f6;
+      font-size: 12px;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  li{
+      list-style: none;
+  }
+  i{
+    font-family: 'icomoon';
+    font-style: normal;
+  }
+  a{
+      text-decoration: none;
+      color: #989898;
+  }
+.w{
+    width: 1190px;
+    margin: 0 auto;
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+.style-red{
+    color: #f10215 !important;
+}
+/* top部start */
+.J_event{
+     height: 80px;
+     background-color: #000;
+}
+.J_event a{
+    display: block;
+    height: 80px;
+    background: url(../image/header.jpg) no-repeat;
+    position: relative;
+}
+.J_event a i{
+    width: 20px;
+    height: 20px;
+    font-family: 'icomoon';
+    font-style: normal;
+    position: absolute;
+    right: 0;
+    top:8px;
+    text-align: center;
+    color: #ccc;
+    background: rgba(45, 45, 45, .3);
+    cursor: pointer;
+    line-height: 20px;
+}
+/* top部end */
+
+
+/* nav-----------start */
+.shortcut{
+    line-height: 30px;
+    height: 30px;
+    background: #e3e4e5;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+    color: #999;
+}
+.shortcut a{
+    font-size: 12px;
+    color: #999;
+    text-decoration: none;
+}
+.shortcut a:hover{
+    color: red;
+}
+.shortcut .location{
+    font-family: 'icomoon';
+    font-style: normal;
+    color: red;
+    font-size: 14px;
+}
+.shortcut .fl li{
+    margin-left: 208px;
+    height: 30px;
+}
+.shortcut .fr li{
+    float: left;
+    text-decoration: none;
+}
+.spacer{
+    width: 1px;
+    height: 10px;
+    background: #ccc;
+    margin: 10px;
+}
+.dropdown{
+    padding-right: 15px;
+    position: relative;
+}
+.dropdown i{
+    font-family: 'icomoon';
+    font-style: normal;
+    font-size: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.mobile{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    left: -12px;
+}
+
+/* nav-----------End */
+
+
+
+
+
+ /* header---------Beginning  */
+.header{
+    height: 140px;
+}
+.inner{
+    position: relative;
+    height: 140px;
+}
+h1{
+    margin: 0;
+}
+.logo{
+    width: 190px;
+    height: 170px;
+    background: url(../image/logo.png) no-repeat;
+    position: absolute;
+    top: -31px;
+    left: 0;
+    background-color: #fff;
+    box-shadow:  4px -4px 10px rgba(45, 45, 45, .2);
+}
+.logo h1 a{
+    display: block;
+    width: 190px;
+    height: 170px; 
+    text-indent: -999em;
+    overflow: hidden;
+}
+.search{
+    width: 550px;
+    height: 35px;
+    position: absolute;
+    left: 320px;
+    top: 25px;
+    background-color:aqua;
+}
+.search input{
+    margin: 0;
+    padding: 0 0 0 5px;
+    width: 495px;
+    height: 35px;
+    border: 0;
+    outline: none;
+    color: #989898;
+    float: left;
+}
+.search button{
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 35px;
+    border: 0px;
+    float: left;
+    background: #f10215;
+    color: #fff;
+}
+.search button:hover{
+    cursor: pointer;
+}
+.search button i{
+    font-size: 20px;
+}
+.search em{
+    position: absolute;
+    top:10px;
+    right: 66px;
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    background: url(../image/sprite-photo-search.png) no-repeat;
+}
+.search em:hover{
+    background-position-x: -30px;
+}
+.hotwords{
+    position: absolute;
+    width: 550px;
+    height: 20px;
+    overflow: hidden;
+    left: 320px;
+    top: 70px;
+}
+.hotwords a{
+    white-space: nowrap;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.hotwords a:hover{
+    color: #f10215;
+}
+
+.shopping{
+    position: absolute;
+    right: 100px;
+    top: 25px;
+    width: 188px;
+    height: 33px;
+    background-color: snow;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+}
+.cw-ico{
+    position: relative;
+}
+.shopping i{
+     font-size: 15px;
+     color: #f10251;
+     margin-right: 5px;
+}
+.shopping-amount{
+    position: absolute;
+    top: 4px;
+    left: 141px;
+    color: #fff;
+    background-color: #f10251;
+    border-radius: 7px;
+    height: 14px;
+    padding: 0 2px;
+    min-width: 12px;
+    line-height: 14px;
+}
+
+.navtiems{
+    position: absolute;
+    bottom: 0;
+    left: 220px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    overflow: hidden;
+}
+.navtiems ul{
+    float: left;
+}
+.navtiems li{
+    float: left;
+    margin-left: 25px;
+}
+.navtiems li a{
+    color: #333;
+}
+.navtiems .spacer{
+    float: left;
+    margin: 14px -1px 0 20px;
+}
+ /* header---------Over  */
+
+ /* footer-------------BBBBBeginning */
+ .footer{
+    height: 448px;
+ }
+.footer a:hover{
+    color: #f10251;
+}
+.footer .mod-service ul{
+    /* width: 1190px; */
+    height: 43px;
+    overflow: hidden;
+ }
+ .footer .mod-service li{
+    float: left;
+    width: 244px;
+    margin-left: 40px;
+ }
+ 
+ .mod-service{
+    padding: 30px 0;
+    border-bottom: 1px solid #dedede
+ }
+ .mod_service_tit{
+    display: inline-block;
+    height: 43px;
+    width: 40px;
+    float: left;
+    text-indent: -999px;
+ }
+ .mod-service-txt{
+    float: left;
+    height: 43px;
+    font-size: 18px;
+    color: #444;
+    font-weight: 700;
+    line-height: 43px;
+ }
+ .mod-service-duo{
+    background: url(../image/ico.png) no-repeat 0 0;   
+ }
+ .mod-service-kuai{
+    background: url(../image/ico.png) no-repeat 0 -43px;
+ }
+ .mod-service-hao{
+    background: url(../image/ico.png) no-repeat 0 -86px;
+ }
+ .mod-service-sheng{
+    background: url(../image/ico.png) no-repeat 0 -129px;
+ }
+ 
+
+ .mod_help{
+    line-height: 23px;
+ }
+ .mod_help_list{
+     padding: 30px 0 ;
+     color: #666;
+     height: 160px;
+     overflow: hidden;
+ }
+.mod_help_nav{
+    width: 198px;
+    float: left;
+}
+.mod_help_nav_tit{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.mod_help_cover{
+    width: 200px;
+    height: 150px;
+    float: right;
+    background:url(../image/ico_footer.png) no-repeat;
+}
+.mod_help_cover_tit{
+    font-size: 14px;
+    margin-bottom: 17px;
+    text-align: center;
+}
+.mod_help_cover_more{
+    float: right;
+}
+.mod_copyright_inner{
+    border-top: 1px solid #dedede;
+    padding: 5px 0;
+    text-align: center;
+}
+.mod_copyright .split{
+    margin: 0 10px;
+}
+.mod_copyright_info{
+    padding: 10px 0;
+    line-height: 25px;
+    color: #999;
+}
+.mod_copyright_inter a{
+    text-align: center;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+}
+.mod_copyright_ico{
+    vertical-align: -1px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 17px;
+    height: 14px;
+    background: url(../image/sprite.footer.png) no-repeat;
+    margin-top: -1px;
+}
+.mod_copyright_ico_global{
+    background-position: -108px -153px;
+}
+.mod_copyright_ico_rissia{
+    background-position: -128px -153px;
+}
+.mod_copyright_ico_indonesia{
+    background-position: -148px -153px;
+}
+.mod_copyright_ico_spain{
+    background-position: -168px -153px;
+}
+.mod_copyright_ico_thailand{
+    background-position: -168px -153px;
+}
+.mod_copyright_inter .split{
+    margin: 0 10px;
+}
+  /* footer-------------OOOver */

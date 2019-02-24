@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            position: relative;
+            border: 1px salmon solid;
+           float: left; 
+           width: 350px;
+           height: 260px;
+           margin: 0 20px;
+           overflow: hidden;
+        }
+
+        img{
+            top: 0;
+            position: absolute;
+            height: 100%;
+            left: 0;
+            transition: all 1s;
+        }
+
+        img:hover{
+            left: -35px;
+        }
+    </style> 
+</head>
+<body>
+        <div><img src="./1.jpg" alt=""></div>
+        <div><img src="./2.jpg" alt=""></div>
+        <div><img src="./3.jpg" alt=""></div>
+</body>
+</html>

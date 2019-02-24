@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>淘宝轮播</title>
+</head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        
+        div{
+            width: 520px;
+            height: 280px;
+            margin: 100px auto;
+            position: relative;
+        }
+        .tb{
+            width: 520px;
+            height: 280px;
+            /* position: absolute; */
+        }
+        .left{
+            width: 24px;
+            height: 36px;
+            position: absolute;
+            left: 0;
+            top:50%;
+            margin-top: -18px;
+        }
+        .right{
+            width: 24px;
+            height: 36px;
+            position: absolute;
+            top:50%;
+            margin-top: -18px;
+            right: 0;
+        }
+        div ul {
+            width: 70px;
+            height: 13px;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            margin-left: -35px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 7px;
+        }
+        li{
+            list-style: none;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            /* display: inline-block; */
+            float: left;
+            margin: 3px;
+            background-color: #fff;
+         }
+         .current{
+             background-color: salmon;
+         }
+    </style>
+<body>
+    <div>
+        <img src="./tb.jpg" alt="" class="tb">
+        <img src="./left.png" alt="" class="left">
+        <img src="./right.png" alt="" class="right">
+        <ul>
+            <li class="current"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

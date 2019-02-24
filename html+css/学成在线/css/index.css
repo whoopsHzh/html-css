@@ -1,0 +1,252 @@
+body{
+    background: #f3f5f7;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.banner{
+    height: 420px;
+    background: #1c036c;
+}
+.banner_inner{
+    position: relative;
+    height: 420px;
+}
+.subnav{
+    background: rgba(0, 0, 0, .4);
+    width: 190px;
+    height: 420px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+.subnav a{
+    display: block;
+    color: #fff;
+    height: 41px;
+    line-height: 41px;
+    font-size: 14px;
+}
+.subnav li{
+    color: #fff;
+    padding-top: 10px 20px;
+    position: relative;
+}
+.subnav span{
+    position: absolute;
+    top: 0;
+    right:0;
+}
+.subnav li a:hover{
+    color:#00b4ff;
+}
+.circle{
+    width: 175px;
+    height: 20px;
+    /* background-color: #fff; */
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    margin-left: -87.5px;
+}
+.circle li{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin: 0 5px;
+    border-radius: 6.5px;
+    background-color: rgba(255,255,255,.4);
+    cursor: pointer;
+    transition: all .6s;
+}
+.circle li:hover{
+    width: 20px;
+    background-color: #fff;
+}
+.schedule{
+    width: 228px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    background-color: #fff;
+}
+.schedule dt{
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #9bceea;
+    color: #fff;
+}
+.schedule dd{
+    padding: 10px 20px 0;
+}
+.schedule li{
+    padding-top: 10px;
+    height: 64px;
+    border-bottom: 1px solid #ccc;
+}
+.schedule .li_border{
+    border: 0px;
+}
+.schedule h5{
+    font-size: 14px;
+    color:#4e4e4e;
+}
+.schedule li p{
+    color:#a5a5a5;
+}
+.schedule a{
+    transform: scaleY(-20px);
+    display: block;
+    font-size: 16px;
+    border: 1px solid #22b0ff;
+    color: #22b0ff;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-weight: 700px;
+}
+
+.recommend{
+    margin-top: 14px;
+    height: 142px;
+    box-shadow: 0 1px 5px 4px  #dcdee0;
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+}
+.rec_l{
+    margin-left: 40px;
+}
+.rec_l a{
+    display: inline-block;
+    color: #050505;
+}
+.rec_l a:hover{
+    color: red;
+}
+.rec_l span{
+    margin: 0 40px ;
+}
+.rec_l strong{
+    color: #00a4ff;
+    font-size: 17px;
+}
+.rec_r{
+    font-size: 17px;
+    color: #00a4ff;
+    margin-right: 34px;
+}
+.recommend_jp{
+    margin-top: 37px;
+    overflow: hidden;
+}
+.jp_hd{
+    position: relative;
+    height: 49px;
+}
+.jp_hd h4{
+    font-size: 20px;
+    color: #494949;
+}
+.jp_hd a{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    color: #d6d7d9;
+}
+.jp_bd li{
+    float: left;
+    width: 223px;
+    height: 277px;
+    margin-right: 21px;
+    margin-bottom: 20px;
+    transition: all 0.4s;
+    /* background-color: paleturquoise; */
+}
+.jp_bd li:hover{
+    box-shadow: 0 5px 5px 4px rgba(0, 0, 0, .2);
+    transform: translateY(-10px);
+}
+.jp_bd li:nth-child(5n){
+    margin-right: 0;
+}
+.jp_bd li img{
+    width: 100%;
+    height: auto;
+    transition: all 0.4s;
+}
+.jp_bd li img:hover{
+    transform: scale(1.1);
+}
+.bd_con{
+    /* background-color: palevioletred; */
+    padding:25px; 
+}
+.bd_con_tit{
+    font-size: 14px;
+    color: #050505;
+}
+.bd_con p{
+    margin-top: 20px;
+    color: #999999;
+}
+.bd_con p span{
+    color: #ff7c2d;
+}
+footer{
+    background-color: #fff;
+}
+.footer_inner{
+    overflow: hidden;
+    padding: 34px 20px 20px;
+    margin-bottom:300px; 
+}
+.footer_l_logo a{
+    display: block;
+    width: 195px;
+    height: 42px;
+    background: url(../image/logo.png) no-repeat;
+    overflow: hidden;
+}
+.footer_l_logo a span{
+    display: block;
+    text-indent: -999px;
+}
+.footer_l_info{
+    padding: 25px 0;
+    width: 433px;
+}
+.download a{
+    height: 35px;
+    text-align: center;
+    width: 120px;
+    line-height: 35px;
+    display: block;
+    font-size: 16px;
+    color: #00a4ff;
+    border: 1px solid #00a4ff;
+}
+.footer_r dl{
+    width: 234px;
+    float: left;
+}
+.footer_r dt{
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.footer_r dl:last-child{
+    width: 70px;
+}
+.footer_r li{
+    color: #999;
+    padding: 4px 0;
+}

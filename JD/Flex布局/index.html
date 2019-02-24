@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        section{
+            width: 80%;
+            height: 150px;
+            /* background-color: pink; */
+            margin: 100px auto;
+            display: flex;
+            flex-direction: column;
+        }
+        section div{
+            /* width: 33.33%; */
+            flex: 1;
+           
+            /* float: left; */
+        }
+        section div:nth-child(1){
+            background-color: paleturquoise;
+            /* width: 200px; */
+            min-width: 100px;
+        }
+        section div:nth-child(2){ 
+            background-color: palegreen;
+            margin: 0 10px;
+            min-width: 100px;
+        }
+        section div:nth-child(3){
+            background-color: maroon;
+            min-width: 100px;
+            /* flex: 1; */
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>2</div>
+        <div>2</div>
+        <div>2</div>
+    </section>
+</body>
+</html>

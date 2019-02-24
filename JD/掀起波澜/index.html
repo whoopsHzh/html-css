@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+         *{
+             margin: 0;
+             padding: 0;
+         }
+         html,body{
+             background-color: paleturquoise;
+             
+         }
+         img{
+            width: 100%;
+            height: auto; 
+            position: fixed;
+            bottom: 0;
+            left: 0;   
+        }
+        img:first-child{
+            animation: hai 2s infinite alternate;
+        }
+        img:last-child{
+            animation: hai 2s infinite alternate;
+        }
+        @keyframes hai {
+            form{
+                bottom: 0;
+            }
+            to{
+                bottom:-50px;
+            }
+        }
+        .sun{
+            width: 100px;
+            height: 100px;
+            /* background-color: #fff; */
+            margin: 100px;
+            position: relative;
+        }
+        .sun::before,.sun::after{
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-50%,-50%);
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, .5);
+            border-radius: 50%;
+            animation: sun 2s ease infinite;
+        }
+        .sun::after{
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 255, 255, .4);
+            animation: sun 3s ease infinite;
+        }
+        @keyframes sun{
+            0%{
+                box-shadow: 0 0 5px rgba(255, 255, 255, .2);
+            }
+            50%{
+                box-shadow: 0px 0px 50px rgba(251, 255, 0, 0.973);
+            }
+            100%{
+                box-shadow: 0 0 5px rgba(255, 255, 255, .2);
+            }
+        }
+    </style>
+</head>
+<body>
+        <div class="sun"></div>
+        <img src="./1.png" alt="">
+        <img src="./2.png" alt="">
+</body>
+</html>
