@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>携程</title>
+    <style>
+        body{
+            min-width: 320px;
+            max-width: 540px;
+            margin:  0 auto;
+        }
+        header{
+            height: 110px;
+        }
+        header img{
+            height: 100%;
+        }
+        nav{
+            border: 1px solid #ccc;
+        }
+        a{
+            text-decoration: none;
+        }
+        em,i{
+            font-style: normal;
+        }
+        .row{
+            height: 90px;
+            display: flex;
+            /* flex-direction: column; */
+            margin: 10px;
+            border-radius: 7px;
+            overflow: hidden;
+            color: #ccc;
+        }
+        .row div{
+            height: 100%;
+            flex: 1;
+        }
+        .row div:nth-child(2){
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+        }
+        .row a{
+            text-align: center;
+            display: block;
+            width: 100%;
+            height: 100%;
+            /* background-color: aqua; */
+            color: #fff;
+            /* background-color: #ff687a; */
+            text-shadow: 0 2px 1px rgba(0, 0, 0, .2);
+        }
+        .row:nth-child(1){
+            background: linear-gradient(to right,#fa5956,#fa9b4d);
+        }
+        .row:nth-child(2){
+            background: linear-gradient(to right,#4b8fed,#53bced);
+        }
+        .row22{
+            display: flex;
+            flex-direction: column;
+            line-height: 45px;
+        }
+        .row22 a{
+            flex: 1;
+        }
+        .row22 a:last-child{
+            border-top: 1px solid #fff; 
+        }
+        .row em{
+            display: block;
+            height: 45px;
+            line-height: 45px;
+        }
+        .ico{
+            display: block;
+            height: 45px;
+            width: 100%;
+            margin:  -8px auto;
+        }
+        .ico_hotel{
+            background: url(./img/grid-nav-items-hotel.png) no-repeat;
+            background-size: 100% 45px;
+        }
+        .ico_ticket{
+            background: url(./img/grid-nav-items-flight.png) no-repeat;
+            background-size: 100% 45px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./img/banner.jpg" alt="">
+    </header>
+    <nav>
+        <div class="row">
+            <div>
+                <a href="#">
+                    <em>
+                        酒店
+                    </em>
+                    <i class="ico ico_hotel">
+
+                    </i>
+                </a>
+            </div>
+            <div class="row22">
+                <a href="#">海外酒店</a>
+                <a href="#">特价酒店</a>
+            </div>
+            <div class="row22">
+                <a href="#">团购</a>
+                <a href="#">民宿·客栈</a>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <a href="#">
+                    <em>
+                        机票
+                    </em>
+                    <i class="ico ico_ticket">
+
+                    </i>
+                </a>
+            </div>
+            <div class="row22">
+                <a href="#">海外酒店</a>
+                <a href="#">特价酒店</a>
+            </div>
+            <div class="row22">
+                <a href="#">团购</a>
+                <a href="#">民宿·客栈</a>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <a href="#">
+                    <em>
+                        酒店
+                    </em>
+                    <i class="ico ico_hotel">
+
+                    </i>
+                </a>
+            </div>
+            <div class="row22">
+                <a href="#">海外酒店</a>
+                <a href="#">特价酒店</a>
+            </div>
+            <div class="row22">
+                <a href="#">团购</a>
+                <a href="#">民宿·客栈</a>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <a href="#">
+                    <em>
+                        酒店
+                    </em>
+                    <i class="ico ico_hotel">
+
+                    </i>
+                </a>
+            </div>
+            <div class="row22">
+                <a href="#">海外酒店</a>
+                <a href="#">特价酒店</a>
+            </div>
+            <div class="row22">
+                <a href="#">团购</a>
+                <a href="#">民宿·客栈</a>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
