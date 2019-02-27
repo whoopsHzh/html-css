@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>点谁谁怀孕</p>
+    <button>没怀孕</button>
+    <button>没怀孕</button>
+    <button>没怀孕</button>
+    <button>没怀孕</button>
+    <button>没怀孕</button>
+    <button>没怀孕</button>
+    <button>没怀孕</button>
+
+    <script>
+        var btnObj = document.getElementsByTagName("button");
+        for (let index = 0; index < btnObj.length; index++) {
+            btnObj[index].onclick =function(){
+                for (let j = 0; j < btnObj.length; j++) {
+                   btnObj[j].innerHTML='没怀孕';
+                }
+                this.innerHTML ="怀孕";
+            };
+        }
+    </script>
+</body>
+</html>

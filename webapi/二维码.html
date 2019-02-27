@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        a{  
+            display: block;
+            height: 50px;
+            width: 50px;
+            background: url('./image/bgs.png') -160px -52px;
+            float: right;
+            margin-top:250px;
+            position: relative;
+        }
+        img{
+            position: absolute;
+            top: -50px;
+            left: -154px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <a id="a" href="#">
+        <img id="img" src="./image/456.png" alt="">
+    </a>
+
+    <script>
+        var aObj = document.getElementById('a');
+        aObj.onmouseover = function () {
+            document.getElementById('img').style.display = "block";
+        }
+        aObj.onmouseout = function () {
+            document.getElementById('img').style.display = "none";
+        }
+    </script>
+</body>
+</html>

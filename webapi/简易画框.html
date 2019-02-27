@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: #ccc;
+        }
+
+        div:nth-child(2) i{
+            width: 400px;
+            height: auto;
+            font-size: 100px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        #div {
+            width: 500px;
+            height: auto;
+        }
+
+        #click {}
+    </style>
+</head>
+
+<body>
+    <div id="click">
+        <img src="./image/1-small.jpg" alt="">
+        <img src="./image/2-small.jpg" alt="">
+        <img src="./image/3-small.jpg" alt="">
+    </div>
+    <div>
+        <i>400*Auto</i>
+        <img id="div" src="" alt="">
+    </div>
+
+
+    <script>
+        function My$(id) {
+            return document.getElementById(id);
+        }
+        var img = My$("div");
+        var iObj = document.getElementsByTagName("i");
+        var i = iObj[0];
+
+        // console.log(img);
+        var imgObj = My$("click").getElementsByTagName("img");
+        for (let index = 0; index < imgObj.length; index++) {
+            imgObj[index].onclick = function () {
+            i.style.display= "none";
+            
+                switch (index) {
+                    case 0:
+                        img.src = "./image/1.jpg";
+                        break;
+                    case 1:
+                        img.src = "./image/2.jpg";
+                        break;
+                    case 2:
+                        img.src = "./image/3.jpg";
+                        break;
+                    default: break;
+                }
+
+            };
+        }
+    </script>
+</body>
+
+</html>

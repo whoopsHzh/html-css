@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        ul,
+        span {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 420px;
+            margin: 200px auto;
+            border: 1px solid darkcyan;
+            display: block;
+        }
+
+        .box_hd span {
+            display: inline-block;
+            width: 90px;
+            height: 100%;
+            margin-right: 10px;
+        }
+
+        .box_hd span:hover {
+            cursor: pointer;
+        }
+
+        .current {
+            background-color: pink;
+        }
+
+        .box_bd li {
+            line-height: 160px;
+            text-align: center;
+            width: 418px;
+            height: 160px;
+            display: none;
+        }
+
+        .box_bd .current {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box_hd">
+            <span class="current">体育</span>
+            <span>娱乐</span>
+            <span>Ypp！</span>
+            <span>Yoo</span>
+        </div>
+        <div class="box_bd">
+            <ul>
+                <li class="current">体育模块你懂吗？</li>
+                <li>娱乐模块你懂吗？</li>
+                <li>Y:::::::::::模块你懂吗？</li>
+                <li>Yppppppp模块你懂吗？</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script>
+        var spanObj = document.getElementsByTagName("span");
+        var list = document.getElementsByTagName("li");
+
+        for (let i = 0; i < spanObj.length; i++) {
+            spanObj[i].onclick = function () {
+                for (let i = 0; i < spanObj.length; i++) {
+                    spanObj[i].removeAttribute('class');
+                    list[i].removeAttribute('class');
+                }
+                
+                    spanObj[i].setAttribute('class', 'current');
+                    list[i].setAttribute('class', 'current');
+
+            };
+
+        }
+    </script>
+</body>
+
+</html>

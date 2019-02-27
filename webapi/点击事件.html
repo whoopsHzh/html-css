@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">button</button>
+    <img src="" alt="" id="im">
+    <img src="" alt="" id="im2">
+
+    <script>
+        document.getElementById('btn').onclick = function() {
+            var im = document.getElementById('im');
+            var im2 = document.getElementById('im2');
+            var im = document.getElementsByTagName("img");
+            im[0].src = "./image/cangjingkong.jpg";
+            im2.src = "./image/boduo.jpg";
+
+            
+            im[0].title = "好看的老师";
+        }
+    </script>
+</body>
+</html>

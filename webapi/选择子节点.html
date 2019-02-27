@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div">
+        <p>11111111</p>
+        <span>22222222</span>
+        <p>1111111111</p>
+        <span>22222222</span>
+        <p>111111111</p>
+        <span>2222222222</span>
+        <p>1111111111</p>
+        <span>2222222222</span>
+    </div>
+
+    <script>
+        var di = document.getElementById('div');
+        var node =di.childNodes;
+        for (let i = 0; i < node.length; i++) {
+            if (node[i].nodeType==1&&node[i].nodeName=="SPAN") {
+                node[i].style.background = "red";
+            }
+            
+        }
+    </script>
+</body>
+</html>

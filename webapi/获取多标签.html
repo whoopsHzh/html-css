@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">
+        button
+    </button>
+    <div>
+        <p>多个标签在这！</p>
+        <p>多个标签在这！</p>
+        <p>多个标签在这！</p>
+        <p>多个标签在这！</p>
+        <p>多个标签在这！</p>
+    </div>
+    <div id="change">
+        <p>变帅只变我！</p>
+        <p>变帅只变我！</p>
+        <p>变帅只变我！</p>
+        <p>变帅只变我！</p>
+        <p>变帅只变我！</p>
+    </div>
+
+    <script>
+        document.getElementById('btn').onclick = function () {
+            var str = document.getElementById('change').getElementsByTagName("p");
+            for (let index = 0; index < str.length; index++) {
+                str[index].innerHTML = "我们都是帅一点";
+            }
+            
+        };
+    </script>
+</body>
+
+</html>
